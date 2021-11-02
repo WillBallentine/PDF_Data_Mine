@@ -17,7 +17,7 @@
     $content = Read-Host "What are we looking for?: "
     $file1 = Read-Host "Path to search: "
     
-    $all = Get-Childitem -Path $file1 -Recurse -Filter *.pdf | ForEach-Object { convert-PDFtoText $_.FullName } | Out-File "C:\ps\bulk.txt"
+    Get-Childitem -Path $file1 -Recurse -Filter *.pdf | ForEach-Object { convert-PDFtoText $_.FullName } | Out-File "C:\ps\bulk.txt"
 
 
 
