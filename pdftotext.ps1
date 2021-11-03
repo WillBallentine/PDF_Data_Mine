@@ -26,5 +26,4 @@
 
 
 
-    Start-Sleep -Seconds 60
 }
